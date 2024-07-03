@@ -6,6 +6,11 @@ public class Topic {
     private String name;
     private String description;
 
+    // Constructor
+    public Topic() {
+
+    }
+
     
     //  This Topic Constructor
     public Topic(String id, String name, String description) {
@@ -15,7 +20,7 @@ public class Topic {
         this.description = description;
     }
 
-    
+
     public String getId() {
         return id;
     }
