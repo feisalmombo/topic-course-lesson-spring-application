@@ -6,6 +6,16 @@ public class Topic {
     private String name;
     private String description;
 
+    
+    //  This Topic Constructor
+    public Topic(String id, String name, String description) {
+        super();
+        this.id = id;
+        this.name = name;
+        this.description = description;
+    }
+
+    
     public String getId() {
         return id;
     }
