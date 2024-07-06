@@ -25,8 +25,13 @@ public class TopicController {
         return topicService.getTopic(id);
     }
 
-    @RequestMapping(method=RequestMethod.POST, value = "/topics")
-    public void addTopic(@RequestBody Topic topic){
+    @RequestMapping(method = RequestMethod.POST, value = "/topics")
+    public void addTopic(@RequestBody Topic topic) {
         topicService.addTopic(topic);
+    }
+
+    @RequestMapping(method = RequestMethod.PUT, value = "/topics")
+    public void updateTopic(@RequestBody Topic topic) {
+        topicService.updateTopic(topic);
     }
 }
